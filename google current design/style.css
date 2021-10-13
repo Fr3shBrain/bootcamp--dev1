@@ -1,0 +1,167 @@
+/* Tarayıcı ile birlikte gelen ön tanımlı css'i sıfırlamak için. */
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* Bütün a etikeklerinin ön tanımlı css'ini sıfırlamak için. */
+a {
+  text-decoration: none;
+  color: #70757a;
+}
+
+/* Nav'ın sol bölümü */
+.left-nav {
+  display: flex;
+}
+
+/* Nav'ın child elemnti */
+.left-nav > a {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #444;
+}
+
+/* Nav'ın sağ bölümü */
+.right-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-nav > a {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #444;
+}
+
+.right-nav > span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Main içindeki elemenleri ortalar */
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.google {
+  position: relative;
+  width: 380px;
+  top: 80px;
+}
+
+.searchb {
+  width: 500px;
+  height: 45px;
+  position: absolute;
+  /* Search inputunu hizalandırır */
+  transform: translate(-20%, 50%);
+}
+
+/* Type'ı text olan elamanı seçer */
+input[type="text"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-radius: 50px;
+  border: 1px solid #d5d4d4;
+  outline: none;
+  padding: 0 40px 0 45px;
+  font-size: 16px;
+  font-family: noto sans hk;
+  /* Elemana gölge ekler */
+  box-shadow: 0 2px 10px -7px #000;
+}
+
+.searchicon {
+  top: 13px;
+  left: 18px;
+  color: #777;
+  font-size: 21px;
+  /* Z-index hangi elemanın üstte duracağını söyler rakamsal değeri düşük olan altta kalır */
+  z-index: 1;
+  position: absolute;
+}
+
+.mic {
+  /* Cursor elamanın üzerinde gelindiğinde el iconu çıkarır */
+  cursor: pointer;
+  position: absolute;
+  width: 13px;
+  right: -65px;
+  top: 13px;
+}
+
+.sbutton {
+  cursor: pointer;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+input[type="button"] {
+  cursor: pointer;
+  background: #ebe8e8;
+  border: none;
+  padding: 8px 20px;
+  margin: 10px;
+  color: #4e4d4d;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="button"]:hover {
+  box-shadow: 0 0 2px #000;
+  color: #000;
+  background: #ede8e8;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar {
+  cursor: pointer;
+  width: 35px;
+  border-radius: 50%;
+  margin: 10px 20px 0 0;
+}
+
+.navtext:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #f2f2f2;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-footer {
+  margin-left: 20px;
+}
+
+.left-footer > a {
+  margin-right: 10px;
+}
+
+.right-footer {
+  margin-right: 20px;
+}
+
+.right-footer > a {
+  margin-left: 10px;
+}
