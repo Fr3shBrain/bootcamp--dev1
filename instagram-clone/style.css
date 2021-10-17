@@ -10,16 +10,16 @@ nav {
   max-height: 200px !important;
 }
 
-.card-header,.card-footer {
+.card-header,
+.card-footer {
   background-color: #fff;
 }
-
 
 #sticky-sidebar {
   position: fixed;
 }
 
-.floatRight{
+.floatRight {
   float: right;
 }
 
@@ -72,7 +72,6 @@ input.empty {
   text-decoration: none;
   color: lightgrey;
 }
-
 
 .logo {
   margin-left: 192px;
